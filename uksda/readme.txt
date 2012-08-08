@@ -18,5 +18,6 @@ For further information, please contact me on twitter via @frackham_edu , or thr
 #TODO: [e] Ensure that the repository version named is the correct one.
 #TODO: [e] Flesh out this readme.
 #TODO: [e] Add installation instructions.
+#TODO: [e] Add installation prerequisite instructions.
 #TODO: [i] Add contributor instructions.
-#TODO: [i] Add contributor instructions.
+#TODO: [i] Add build instructions.
