@@ -5,13 +5,15 @@ Created on 6 Aug 2012
 '''
 
 class Student(object):
-    '''
-    classdocs
-    '''
+    '''Core object representing a single student.
+    
+TODO: A fair bit!'''
 
 
     def __init__(self, params):
         '''
         Constructor
         '''
+        #TODO: [e] Pull student from local version.
+        pass
         
