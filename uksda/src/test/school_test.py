@@ -7,17 +7,22 @@ Created on 8 Aug 2012
 import unittest
 from uksda_core.school import School
 
+
 class TestSchool(unittest.TestCase):
 
     def setUp(self):
-        self.testSchool = School()
+        self.testSchool = School("", "", "ElectricPink Primary School",
+                                 300146, 15406)
 
     def tearDown(self):
         pass
 
     def testShouldRenameSchool(self):
-        self.testSchool.setName("Renamed school")
-        #TODO: WRITE TEST!
+        s = "ElectricPink Primary School"
+        self.testSchool.setName("", "", "Renamed school")
+        self.assertEqual(self.testSchool.Name(), "Renamed school",
+                         "Renaming school.")
+        self.testSchool.fullName = s
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

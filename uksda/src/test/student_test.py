@@ -20,13 +20,16 @@ class TestStudent(unittest.TestCase):
     #Change property tests.
     def testShouldChangeForename(self):
         self.testStudent.setForename("James")
-        #2 tests...check that Name also returns correct value.
-        #TODO: [d] 1 unit test per test function is required, as only 1 picked up by test suite.
-        self.assertEqual(self.testStudent.getForename(), "James", "Failed to change student forename.")
-        self.assertEqual(self.testStudent.Name(case="Proper", order="Surname, Forename"), "Jones, James", "Failed to return Name correctly after change to student forename.")
+        #TODO: [d] 1 unit test per test function is required, as only 1 picked up by test suite. Or is this one test?
+        self.assertEqual(self.testStudent.getForename(), "James",
+                         "Failed to return changed student forename.")
+        self.assertEqual(self.testStudent.Name(case="Proper", order="Surname, Forename"), "Jones, James",
+                         "Failed to return Name correctly after change to student forename.")
         self.testStudent.setForename("Bob")  # Reset.
-        self.assertEqual(self.testStudent.getForename(), "Bob", "Failed to change student forename.")
-        self.assertEqual(self.testStudent.Name(case="Proper", order="Surname, Forename"), "Jones, Bob", "Failed to return Name correctly after change to student forename.")
+        self.assertEqual(self.testStudent.getForename(), "Bob",
+                         "Failed to change student forename.")
+        self.assertEqual(self.testStudent.Name(case="Proper", order="Surname, Forename"), "Jones, Bob",
+                         "Failed to return Name correctly after change to student forename.")
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

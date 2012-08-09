@@ -7,6 +7,7 @@ Coding conventions used:
  Use of set and get attribute names, along with aliases for set.
   - Using get/set properties in order to keep a single point of processing on properties (e.g. if I want to change how DOBs are handled, we never use self.dob but instead change it once in self.getDOB().	
   - Unit test names start with testShould (idea from Schneider's comment on http://stackoverflow.com/questions/155436/unit-test-naming-best-practices).
+  - ID is always capitalised, even as part of a ProperCase function name.
  
  Interested in developing this project? 
   - Contact me via @frackham_edu on twitter (let me know it's RE this project, and I'll follow back if you want to DM me).

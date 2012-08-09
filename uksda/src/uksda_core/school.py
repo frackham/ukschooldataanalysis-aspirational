@@ -10,10 +10,43 @@ class School(object):
 
 TODO: A fair bit!'''
 
-    def __init__(self):
-        pass
+    def __init__(self, initials, shortName, fullName,
+                 dfeID, centreID):
+        self.setName(initials, shortName, fullName)
+        self.setDfeID(dfeID)
+        self.setCentreID(centreID)
 
-    def setName(self, name):
-        pass
 
+    def __str__(self,):
+        return "School: " + self.Name() + ": Dfe:" + self.getDfeID() + ", CentreID:" + self.getCentreID()
+
+    #Properties (set).
+    def setName(self, initials, shortName, fullName):
+        #Fullname only.
+        print(self.fullName)
+        self.fullName = fullName
+        self.shortName = fullName
+        chars = [c[0:1] for c in fullName.split(" ")]
+        self.initials = str(chars)
+        print(self.initials)
+    
+    def setDfeID(self, dfeID):
+        self.dfeID = dfeID
+    
+    def setCentreID(self, centreID):
+        self.centreID = centreID
+        
+    #Properties (get).
+    def getName(self):
+        return self.fullName
+    
+    def getDfeID(self):
+        return self.dfeID
+    
+    def getCentreID(self):
+        return self.centreID
+    
+    #Properties (readonly).
+    def Name(self):
+        return self.getName()
 

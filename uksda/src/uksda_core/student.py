@@ -23,6 +23,9 @@ Gender accepts any usual string indicator for gender (M, Male, Man, Boy, B), reg
         self.setGender(gender)
         self.setDOB(dob) #DOB = Date of birth.
 
+    def __str__(self,):
+        return "Student: " + self.Name() + ": " + self.getGender() + ", " + self.getDOB()
+
     #Properties (set)
     def setSurname(self, surname):
         self.surname = surname
@@ -63,3 +66,7 @@ Gender accepts any usual string indicator for gender (M, Male, Man, Boy, B), reg
         """
         # TODO: [i] Inherit from system settings?
         return self.getSurname() + ", " + self.getForename()
+
+if __name__ == "__main__":
+    stu = Student("Rackham", "Fraser", "M", "17/02/83")
+    print(stu)
