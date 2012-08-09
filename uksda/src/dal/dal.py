@@ -29,3 +29,11 @@ class DataAccessLayer(object):
     def setDataSource(self, dataSource):
         print("Data source set")  # TODO: [e] Replace with logging.
         self.dataSource = dataSource
+
+    def getDataSource(self):
+        print("getDataSource")
+        return self.dataSource
+
+    def DataSource(self):
+        print("DataSource, now calling getDataSource.")
+        return self.getDataSource()

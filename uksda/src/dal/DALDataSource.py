@@ -4,7 +4,7 @@ Created on 8 Aug 2012
 @author: Fraser
 '''
 #TODO: [e] Pretty sure that this is going to need to import the uksda-core core data classes (student, staff, school).
-
+from uksda_core.dataset import Dataset
 
 class DALDataSource(object):
     '''Template object inherited by specific data sources. DO NOT use directly.
