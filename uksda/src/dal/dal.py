@@ -12,6 +12,7 @@ from dal.DALDataSource_flatfiles import DALDataSource_flatfiles
 from dal.DALDataSource_mysql import DALDataSource_mysql
 from dal.DALDataSource_postgressql import DALDataSource_postgressql
 
+
 class DataAccessLayer(object):
     '''
     classdocs
@@ -26,5 +27,5 @@ class DataAccessLayer(object):
         print("DAL initialised using " + str(dataSource))
 
     def setDataSource(self, dataSource):
-        print("Data source set") #TODO: [e] Replace with logging.
+        print("Data source set")  # TODO: [e] Replace with logging.
         self.dataSource = dataSource

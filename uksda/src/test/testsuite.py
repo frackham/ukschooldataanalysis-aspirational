@@ -13,7 +13,7 @@ from test.student_test import TestStudent
  """
 
 
-def UKSDA_TestSuite():
+"""def UKSDA_TestSuite():
     #School
     suiteSchool = unittest.TestSuite()
     suiteSchool.addTests(unittest.TestLoader().loadTestsFromTestCase(TestSchool))
@@ -29,9 +29,9 @@ def UKSDA_TestSuite():
             iteratedsuites.append(thisTest)
     print(iteratedsuites)  # HACK: PyUnit not picking up on lists within list of suites, despite unittest documentation using it as an example. 
     return iteratedsuites
-
+"""
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     #suite = UKSDA_TestSuite()
-    #unittest.main()
+    unittest.main()
     pass  # TEMP: TO run all unit tests using pyunit, right click on package folder!
