@@ -13,7 +13,7 @@ TODO: A fair bit!'''
     def __init__(self):
         pass
 
-    def setName(self):
+    def setName(self, name):
         pass
 
 
